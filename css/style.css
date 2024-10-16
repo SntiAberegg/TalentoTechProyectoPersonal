@@ -1,0 +1,68 @@
+header{
+    color: black;
+    height: 100%;
+    padding: 0%;
+}
+
+/*MENU DE NAVEGACION*/
+nav{
+    display: inline;
+    list-style:none;
+    box-sizing: content-box;
+
+    margin:auto;
+    padding-left: 15px;
+}
+
+/*opciones de menu*/
+nav li{
+    display: inline;
+    list-style: none;
+    background-color: transparent;
+    margin: 2vw;
+    padding: 0%;
+    background-position: center;
+
+}
+
+main{
+    text-align: center;
+}
+
+footer{
+    color: rgb(129, 129, 129);
+    text-align: center;
+    font-family: monospace;
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.formulario{
+    background-color: black;
+    padding: 5% 5%
+}
+
+.formulario_input{
+    color: white;
+    margin: auto;
+    padding: 2%;
+    width: 60%;
+    border: none;
+    border-top: 1px solid white;
+    background-color: transparent;
+}
+
+.formulario_submit{
+    width: 40%;
+    color: white;
+    margin: 1% 15%;
+    background-color:black;
+    text-transform: uppercase;
+}
+
+#Ubicacion{
+    box-sizing: content-box;
+    margin:auto;
+}
