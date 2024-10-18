@@ -1,26 +1,51 @@
-header{
-    color: black;
-    height: 100%;
-    padding: 0%;
+/*CARACTERISTICAS GENERALES*/
+*{
+    background-color: #FFFFFF;
 }
 
-/*MENU DE NAVEGACION*/
+/*COLORES DEL SITIO
+background-color: #f6c479;
+background-color: rgb(04,23,68);
+*/
+
+/* -----ENCABEZADO----- */
+header{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: rgb(04,23,68);
+}
+
+header img{
+width: 10vw;
+margin-left: 2vw;
+display: inline;
+background-color: rgb(04,23,68);
+}
+
+header h1{
+    color: white;
+    display: inline;
+    background-color: rgb(04,23,68);
+}
+
+
+/* -----MENU DE NAVEGACION----- */
 nav{
     display: inline;
     list-style:none;
     box-sizing: content-box;
-
-    margin:auto;
-    padding-left: 15px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
-/*opciones de menu*/
+/* -----opciones del menu-nav----- */
 nav li{
     display: inline;
     list-style: none;
     background-color: transparent;
-    margin: 2vw;
-    padding: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:2vw;;
     background-position: center;
 
 }
@@ -29,16 +54,28 @@ main{
     text-align: center;
 }
 
+/*-----pie de pagina-----*/
 footer{
     color: rgb(129, 129, 129);
     text-align: center;
-    font-family: monospace;
+    background-color: rgb(04,23,68);
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
-h1{
-    font-family: 'Times New Roman', Times, serif;
+footer img{
+    display: inline;
 }
 
+footer p{
+    display: inline;
+    background-color: rgb(04,23,68);
+}
+
+/* ------AJUSTES DEL SITIO------*/
+
+
+/*_________________FORMULARIO*/
 .formulario{
     background-color: black;
     padding: 5% 5%
@@ -62,7 +99,16 @@ h1{
     text-transform: uppercase;
 }
 
-#Ubicacion{
+/* ________________UBIACION*/
+#ubicacion{
     box-sizing: content-box;
-    margin:auto;
+    margin-left:auto;
+    margin-right: auto;
+    padding-left: 15%;
+}
+
+#principal_sobremi{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5vw;
 }
