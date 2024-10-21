@@ -1,7 +1,4 @@
 /*CARACTERISTICAS GENERALES*/
-*{
-    background-color: #FFFFFF;
-}
 
 /*COLORES DEL SITIO
 background-color: #f6c479;
@@ -31,25 +28,32 @@ header h1{
 
 /* -----MENU DE NAVEGACION----- */
 nav{
-    display: inline;
+    /*alineacion y ubicacion*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*tamaño y espacio*/
     list-style:none;
     box-sizing: content-box;
-    margin-left:auto;
-    margin-right:auto;
+
+    margin: auto;
 }
 
-/* -----opciones del menu-nav----- */
-nav li{
+/*opciones del menu*/
+.opcion_menu_nav{
     display: inline;
     list-style: none;
-    background-color: transparent;
-    margin-left: auto;
-    margin-right: auto;
-    padding:2vw;;
-    background-position: center;
-
+    color:rgb(04,23,68);
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 5px solid #f6c479;
+    background: transparent;
+    padding-top: 2px;
+    margin-right: 3vw;
 }
 
+/*seccion principal*/
 main{
     text-align: center;
 }
@@ -73,7 +77,10 @@ footer p{
 }
 
 /* ------AJUSTES DEL SITIO------*/
-
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Mantiene el color del texto del elemento padre */
+}
 
 /*_________________FORMULARIO*/
 .formulario{
@@ -92,19 +99,25 @@ footer p{
 }
 
 .formulario_submit{
-    width: 40%;
+    width: 35%;
     color: white;
-    margin: 1% 15%;
     background-color:black;
     text-transform: uppercase;
+
+        /*alineacion y ubicacion*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 /* ________________UBIACION*/
 #ubicacion{
     box-sizing: content-box;
-    margin-left:auto;
-    margin-right: auto;
-    padding-left: 15%;
+    
+    /*alineacion y ubicacion*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #principal_sobremi{
