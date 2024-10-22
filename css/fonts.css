@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Cormorant";
+    src: url(../fonts/Cormorant-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Cormorant";
+    src: url(../fonts/Cormorant-Italic-VariableFont_wght.ttf) format("truetype");
+    font-style: italic;
+}

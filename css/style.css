@@ -1,4 +1,8 @@
 /*CARACTERISTICAS GENERALES*/
+*{
+    font-family: "Cormorant";
+}
+
 
 /*COLORES DEL SITIO
 background-color: #f6c479;
@@ -35,8 +39,8 @@ nav{
 
     /*tamaño y espacio*/
     list-style:none;
-    box-sizing: content-box;
-
+    box-sizing: border-box;
+    font-weight: 700;
     margin: auto;
 }
 
