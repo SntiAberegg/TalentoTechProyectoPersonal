@@ -46,7 +46,7 @@ nav{
 
 /*opciones del menu*/
 .opcion_menu_nav{
-    display: inline;
+    display: inline-block;
     list-style: none;
     color:rgb(04,23,68);
     text-transform: uppercase;
