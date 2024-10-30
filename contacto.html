@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+
     <title>CONTACTO</title>
 </head>
 <body>
@@ -15,37 +20,48 @@
     <h1>Libros y Letras.com</h1>
 </header>
 
-<!-- .....MENU..... -->
 <nav>
-    <ul>
-        <!--INICIO-->
-        <li class="opcion_menu_nav"><a href="index.html" target="_self">inicio</a></li>
-        
-        <!-- .....CURSOS..... -->
-        <li class="opcion_menu_nav"><a href="cursos.html" target="_self">cursos</a></li>
-        
-        <!-- .....CONTACTO..... -->
-        <li class="opcion_menu_nav"><a href="contacto.html" target="_self">contacto</a></li>
-    </ul>
-</nav>
+    <!-- .....MENU..... -->
+        <ul class="menu">
+            <!--INICIO-->
+            <li class="opcion_menu_nav"><a href="index.html" target="_self">inicio</a></li>
+            
+            <!-- .....CURSOS..... -->
+            <li class="opcion_menu_nav"><a href="cursos.html" target="_self">cursos</a></li>
+            
+            <!-- .....CONTACTO..... -->
+            <li class="opcion_menu_nav"><a href="contacto.html" target="_self">contacto</a></li>
+        </ul>
+    </nav>
 
 
-    <!--Seccion principal de contacto-->
+    <!-- ....Seccion principal de contacto.... -->
 <main>
-    <H1> Contactame ✉🖋</H1>
-    
-    <img src="imagenes sitio desafio/imagen libro.jpeg" alt="libro imagen" width="10%">
+    <h2 class="title_contactame">contáctame</h2>
 
     <!--Formulario de contacto-->
-    <form action="recopila.html" class="formulario">
-        <input class="formulario_input" width="50%" minlength="1" placeholder="Escribe tu mensaje">
+    <form action="https://formspree.io/f/xrbgewvk" class="formulario" method="POST">
+
+        <label>
+            <!-- mensaje -->
+            <textarea name="message" class="formulario_input" width="50%" minlength="1" placeholder="Escribe tu mensaje"></textarea>
+        </label>
+
+
+        <!-- email -->
+        <label>
+            <input class="formulario_input" type="email" name="email" placeholder="email@ejemplo.com" required>
+        </label>
+
         <br>
-        <input class="formulario_input" type="email" placeholder="email@ejemplo.com" required>
+        <label>
+            <!-- Archivos -->
+            <input class="formulario_input" type="file" name="upload">
+        </label>
+
         <br>
-        <input class="formulario_input" type="file" name="" id="">
-        <br>
-        <br>    
-        <input class="formulario_input formulario_submit" type="button" value="Enviar">
+        <!-- ENVIAR -->
+        <button class="formulario_input, formulario_submit" type="submit">enviar</button>
     </form>
 
 </main>
