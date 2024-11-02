@@ -1,20 +1,18 @@
 /*CARACTERISTICAS GENERALES*/
-*{
-    font-family:'Times New Roman', Times, serif;
-}
-
-/* ------GENERAL------*/
-a {
-    text-decoration: none; /* Elimina el subrayado */
-    color: inherit; /* Mantiene el color del texto del elemento padre */
-}
 
 /* PALETA DE COLORES
 Amarillo
-background-color: #f6c479;
+#f6c479;
 
 Azul
-background-color: rgb(04,23,68);
+rgb(04,23,68);
+
+Turqueza oscuro
+rgb(15,62,113)
+
+Turqueza
+rgb(6,182,212)
+
 */
 
 /* FUENTES ESPECIALES
@@ -25,13 +23,23 @@ font-family: "Cormorant";
 font-family: "Lancelot";
 */
 
+/* ------GENERAL------*/
+*{
+    font-family:'Times New Roman', Times, Arial;
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Mantiene el color del texto del elemento padre */
+}
+
 /* -----ENCABEZADO----- */
 header{
     padding-top: 1vw;
     padding-bottom: 1vw;
     background-color: rgb(04,23,68);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content:left;
     align-items:center;
 }
@@ -104,79 +112,143 @@ footer p{
     background-color: transparent;
 }
 
-
-/* ....Seccion Principal.... */
-
-/* ....INDEX.... */
+/* ....ajustes generales: main.... */
 main{
-    text-align: center;
-    align-items:center;
-    background-color: transparent;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-/* ....Presentacion del inicio.... */
-/* ....(contenedor).... */
+/* ....main - contactos.... */
+#main_contactos{
+text-align: center;
+}
+
+/* ....main - contactos.... */
+#main_cursos{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flexbox;
+    padding-bottom: 10vh;
+    color: rgb(04,23,68);
+}
+
+/* ....main - INDEX.... */
+#main_home{
+    display: flexbox;
+}
+
+/* ....Seccion Principal - HOME INDEX.... */
+.mensaje_inicio{
+    color: white;
+    background: linear-gradient(45deg, rgb(4,23,68), rgb(15,62,113), rgb(6,182,212));
+    margin: 0 0 8vh 0;
+    padding: 5% 0 5% 5%;
+    flex-wrap: wrap;
+}
+
+.mensaje_inicio h2{
+    font-family:"Cormorant";
+    font-size: 10vw;
+    margin: 0;
+    padding: 0;
+}
+
+.mensaje_inicio h3{
+    font-size: 1rem;
+}
+
+
+/* ....Presentacion: home section.... */
+/* tarjeta de presentacion */
 .card_sobremi{
-/*colores, bordes*/
-color: white;
-background-color:  rgb(04,23,68);
-border: 2px solid black;
-box-shadow: black;
-border-radius: 15px;
-
-/*apariencia y tamaño*/
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-position: sticky;
-box-sizing: border-box;
-width: 45%;
-
-margin:auto;
-margin-top: 10px;
-margin-bottom: 2%;
-padding: 2vw;
-justify-content: center;
-align-items: center;
-}
-
-
-.card_sobremi h2{
-    text-transform: initial;
-    font-size: 60px;
-    font-style: italic;
-    margin: 0%;
-    padding: 0%;
-    text-align: center;
-
-    display: inline-block;
-    position: relative;
-}
-
-.card_sobremi p{
-    text-align: justify;
-    margin: 0%;
-    overflow: visible;
-
-    font-family: "Lancelot";
-}
-
-.card_sobremi img{
-    height:35vw;
-    margin: 1vw;
-    margin-left: 0;
-    border: 1px solid transparent;
-    border-radius: 5px;
-}
-
-/* establecer un punto de quiebre, se suele hace al final y se usan varios tamaños: 
-@media (max-widt: 600px){
-    .card_sobremi{
+    /*colores, bordes*/
+    color: white;
+    background-color:  rgb(04,23,68);
+    border: 1px solid grey;
+    box-shadow: 0 0 40px 0 #000007a7;
+    border-radius: 15px;
     
+    /*apariencia y tamaño*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: sticky;
+    box-sizing: border-box;
+    width: 45%;
+    
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 2%;
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
     }
-}
+    
+    
+    .card_sobremi h2{
+        text-transform: initial;
+        font-size: 10vh;
+        font-style: italic;
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+    
+        display: inline-block;
+        position: relative;
+    }
+    
+    .card_sobremi p{
+        text-align: justify;
+        margin: 0%;
+        overflow: visible;
+    
+        font-family: "Lancelot";
+    }
+    
+    .card_sobremi img{
+        height:30vw;
+        margin: 1vw;
+        margin-left: 0;
+        border: 1px solid transparent;
+        border-radius: 15px;
+    }
 
-*/
+/* ....seccion de tarjetas - index.... */
+    #card_section_index{
+        margin:5px;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        /*grid-template-rows:1fr;*/
+    }
+
+/* tarjetas */
+    .card_index_info{
+        margin: 5px;
+        padding: 5px;
+        text-align: justify;
+        line-height: 30px;
+        text-transform: capitalize;
+        box-sizing: border-box;
+        background-color: #f6c4797b;
+        border-radius: 10px;
+        /*box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);*/
+    }
+
+    .card_index_info h3{
+        font-size: 3vw;
+        text-align: center;
+        margin-left: 15px;
+    }
+
+/* ....SECCION CURSOS.... */    
+    #main_cursos h2{
+        text-transform: capitalize;
+        text-align: left;
+        margin:0 0 0 4vw;
+        font-size: 8vw;
+        overflow: visible;
+    }
 
 /* ....SECCION CONTACTOS.... */
 .title_contactame{
@@ -189,12 +261,12 @@ align-items: center;
     text-transform: capitalize;
 }
 
-/*_________________FORMULARIO*/
+/* ....FORMULARIO.... */
 .formulario{
     background-color: rgb(04,23,68);
-    padding: 5% 5%;
-    margin-top: 0;
-    padding-top: 0;
+    padding: 0 5% 5% 5%;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulario_input{
@@ -208,8 +280,18 @@ align-items: center;
     box-sizing: border-box;
 }
 
+.imp_file{
+text-align: center;
+justify-content: center;
+justify-items: center;
+overflow:visible;
+flex-wrap:wrap;
+margin: 1vw;
+color: white;
+}
+
 .formulario_submit{
-    width: 35%;
+    width: 35vw;
     color: white;
     background-color: rgb(04,23,68);
     text-transform: uppercase;
@@ -217,7 +299,7 @@ align-items: center;
         /*alineacion y ubicacion*/
         display:flexbox;
         justify-content: center;
-        font-size: 30px;
+        font-size: 5vw;
         font-family: "Cormorant";
         border: 1px solid white;
 }
@@ -232,8 +314,125 @@ align-items: center;
     align-items: center;
 }
 
-#principal_sobremi{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5vw;
+
+/* ....MediaQuery para diferentes dispositivos....*/
+
+/* (pantallas con menos de 768px) */
+@media screen and (max-width: 768px) {
+
+    /*optimizar lectura de card*/
+    .card_sobremi {
+        /*dimension del contendor*/
+        margin:auto;
+        margin-bottom: 5vh;
+        width: 80%;
+    }
+
+    .card_sobremi h2{
+        font-size: 2rem;
+    }
+
+    .card_sobremi img{
+        width:30vw;
+        margin: 1vw;
+        border: 1px solid transparent;
+        border-radius: 50%;
+    }
+
+    #card_section_index{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+
+    /*tarjetas index*/
+    .card_index_info h3{
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+
+}
+
+/* Para móviles (smartphones en vertical y horizontal) */
+@media screen and (max-width: 480px) {
+    /*ajustar index*/
+    #main_home{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .mensaje_inicio{
+        font-family: 'Times New Roman', Times;
+        font-weight: 100;
+    }
+
+    .card_sobremi{
+        width: 100%;
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    /*texto: card presentacion */
+    .card_sobremi h2{
+        font-size: 1rem;
+    }
+
+}
+
+/* Para móviles pequeños (smartphones en vertical) */
+@media screen and (max-width: 320px) {
+    /*encabezado y menu*/
+    header{
+    justify-content: center;
+    flex-direction: column;    
+    }
+
+    header img{
+    display: block;
+    width: 22vw;
+    }
+
+    header h1{
+        display: none;
+    }
+
+.menu{
+    flex-direction: column;
+}
+
+.mensaje_inicio h2{
+    font-size: 4vh;
+}
+
+/*card de presentacion*/
+.card_sobremi h2{
+    text-transform: initial;
+    font-size: 8vh;
+    font-style:normal;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+
+.card_sobremi img{
+    display: none;
+}
+
+.card_sobremi p{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/*tarjetas index*/
+.card_index_info{
+    font-size: 10px;
+    font-weight: 100;
+    line-height: normal;
+}
+
+/*formulario de contacto*/
+.imp_file{
+    font-size: 5px;
+    }
 }
