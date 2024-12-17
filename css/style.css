@@ -33,64 +33,9 @@ a {
     color: inherit; /* Mantiene el color del texto del elemento padre */
 }
 
-/* -----ENCABEZADO----- */
-header{
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    background-color: rgb(04,23,68);
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content:left;
-    align-items:center;
-}
-
-header img{
-width: 10%;
-display: inline;
-background-color: rgb(04,23,68);
-padding-left: 1vw;
-}
-
-header h1{
-    font-family: "Cormorant";
-    color: white;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(04,23,68);
-    font-size: 4vw;
-    padding-left: 1vw;
-}
-
-
-/* ....MENU DE NAVEGACION.... */
-.menu{
-    /* ....alineacion y ubicacion.... */
-    display: flex;
-    box-sizing: border-box;
-    justify-content:space-evenly;
-    align-items:center;
-
-    /* ....apariencia.... */
-    list-style:none;
-    font-weight:400;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(04,23,68);
-}
-
-/* ....opciones del menu.... */
-.opcion_menu_nav{
-    display: inline;
-    list-style: none;
-    color: white;
-    background: transparent;
-    border-top: 5px solid #f6c479;
-    margin-right: 3vw;
-
-    font-family: "Lancelot";
-    text-transform: uppercase;
-    text-align: center;
+/* Encabezado y NavBar-menu */
+#logo__element__bootstrap{
+    margin: 1vw;
 }
 
 /* -----pie de pagina----- */
@@ -120,15 +65,21 @@ main{
 
 /* ....main - contactos.... */
 #main_contactos{
+align-items: center;
+justify-content: center;
+box-sizing: border-box;
 text-align: center;
+margin: auto;
+margin-top: 12vh;
 }
 
-/* ....main - contactos.... */
+/* ....main - cursos.... */
 #main_cursos{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     display: flexbox;
+    align-items: center;
+justify-content: center;
+box-sizing: border-box;
+text-align: center;
     padding-bottom: 10vh;
     color: rgb(04,23,68);
 }
@@ -142,7 +93,7 @@ text-align: center;
 .mensaje_inicio{
     color: white;
     background: linear-gradient(45deg, rgb(4,23,68), rgb(15,62,113), rgb(6,182,212));
-    margin: 0 0 8vh 0;
+    margin: 10vh 0 8vh 0;
     padding: 5% 0 5% 5%;
     flex-wrap: wrap;
 }
@@ -265,15 +216,16 @@ text-align: center;
 .formulario{
     background-color: rgb(04,23,68);
     padding: 0 5% 5% 5%;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
 }
 
 .formulario_input{
     color: white;
     margin: auto;
     padding: 2%;
-    width: 60%;
+    width: 50vw;
     border: none;
     border-top: 1px solid white;
     background-color: transparent;
@@ -362,7 +314,11 @@ color: white;
         text-align: center;
         margin: auto;
     }
-    
+    /*ajustar navbar*/
+    #titulo__element__bootstrap{
+        display: none;
+    }
+
     .mensaje_inicio{
         font-family: 'Times New Roman', Times;
         font-weight: 100;
@@ -378,6 +334,11 @@ color: white;
         font-size: 1rem;
     }
 
+    /*input seccion de contacto*/
+    .imp_file{
+        width: 50vw;
+        font-size: 5px;
+        }
 }
 
 /* Para móviles pequeños (smartphones en vertical) */
