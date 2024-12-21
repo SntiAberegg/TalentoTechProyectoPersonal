@@ -76,12 +76,70 @@ margin-top: 12vh;
 /* ....main - cursos.... */
 #main_cursos{
     display: flexbox;
+    text-align: center;
     align-items: center;
 justify-content: center;
 box-sizing: border-box;
 text-align: center;
     padding-bottom: 10vh;
     color: rgb(04,23,68);
+}
+
+#cards_cursos_box{
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+listado de cursos que se imprimen en el DOM
+*/
+
+.contenedor-cursos {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#listaCursos {
+    list-style: none;
+    padding: 0;
+}
+
+.curso-item {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 6px solid #4CAF50;
+}
+
+.curso-disponible {
+    color: #4CAF50;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/*BOTON MOSTRAR CURSOS*/
+#btnMostrarCursos {
+    background-color:    rgb(15,62,113);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#btnMostrarCursos:hover {
+    background-color: rgb(6,182,212);
+
+}
+
+.desaparecerElemento{
+    display: none;
 }
 
 /* ....main - INDEX.... */
@@ -201,6 +259,7 @@ text-align: center;
         overflow: visible;
     }
 
+    
 /* ....SECCION CONTACTOS.... */
 .title_contactame{
     background-color: rgb(04,23,68);
@@ -339,6 +398,10 @@ color: white;
         width: 50vw;
         font-size: 5px;
         }
+
+    #cards_cursos_box{
+        display: block;
+    }
 }
 
 /* Para móviles pequeños (smartphones en vertical) */

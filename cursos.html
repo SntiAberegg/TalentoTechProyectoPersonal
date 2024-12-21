@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-<html lang="sp">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <title>CURSOS</title>
 </head>
 <body>
 
-
-<!--
-    .....Encabezado Y MENU.... 
--->
-
-<!-- se modificaron las propiedades de color y de padding que no son nativas de bootstrao, usando estilos de linea para que se ajusten al sitio  -->
-
-<!-- BOOTSRAP NAVBAR -->
+<!-- BOOTSTRAP NAVBAR -->
 <nav id="navBar__element__bootstrap" class="navbar navbar-dark bg-dark fixed-top" style="padding: 0%;">
 
   <div class="container-fluid" style="background-color: rgb(04,23,68);">
 
-<!-- LOGO Y TITULO -->
+    <!-- LOGO Y TITULO -->
+    <img src="imagenes sitio desafio/logo.png" alt="Imagen de encabezado" width="60" class="d-inline-block align-text-top navbar-brand" id="logo__element__bootstrap">
 
-              <img src="imagenes sitio desafio/logo.png" alt="Imagen de encabezado" width="60" class="d-inline-block align-text-top" 
-              id="logo__element__bootstrap"
-
-              class="navbar-brand">
-
-              <h3 id="titulo__element__bootstrap" class="navbar-brand">Libros & Letras</h3>
+    <h3 id="titulo__element__bootstrap" class="navbar-brand">Libros & Letras</h3>
 
     <!-- BOTON MENU SANDWICH -->
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -41,38 +34,38 @@
     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
       <div class="offcanvas-header" style="background-color: rgb(04,23,68);">
 
-<!-- TITULO DEL MENU DESPLEGADO -->
+        <!-- TITULO DEL MENU DESPLEGADO -->
         <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">MENU</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
 
-<!-- OPCIONES -->
+      <!-- OPCIONES -->
       <div class="offcanvas-body" style="background-color: rgb(04,23,68);">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
-<!-- ...INICIO... -->
+          <!-- ...INICIO... -->
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html" target="_self">Inicio</a>
+            <a class="nav-link active" aria-current="page" href="index.html" target="_self">Inicio</a>
           </li>
 
-<!-- ...CURSOS... -->
+          <!-- ...CURSOS... -->
           <li>
-              <a class="nav-link" href="cursos.html" target="_self">Cursos</a>
+            <a class="nav-link" href="cursos.html" target="_self">Cursos</a>
           </li>
 
-<!-- ...CONTACTO... -->
-<li>
-  <a class="nav-link" href="contacto.html" target="_self">Contacto</a>
-</li>
-
+          <!-- ...CONTACTO... -->
+          <li>
+            <a class="nav-link" href="contacto.html" target="_self">Contacto</a>
+          </li>
+        </ul>
+        
       </div>
     </div>
   </div>
 </nav>
 
-
-<!-- carrousel framework item -->
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+<!-- CAROUSEL BOOSTRAP ITEM -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" style="margin-top: 15vh;">
 
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -82,8 +75,8 @@
 
     <div class="carousel-inner">
 
-<!-- imagenes   -->
-        <div class="carousel-item active">
+      <!-- IMAGENES -->
+      <div class="carousel-item active">
         <img src="imagenes sitio desafio/generoCienciaFiccion.jpg" class="d-block w-100" alt="Publicidad de Ciencia Ficcion">
       </div>
       
@@ -95,7 +88,8 @@
         <img src="imagenes sitio desafio/generoPolicial.jpg" class="d-block w-100" alt="Publicidad de Novela Policial">
       </div>
     </div>
-    <!-- fin imagenes -->
+    <!-- FIN IMAGENES -->
+
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -106,49 +100,142 @@
     </button>
   </div>
 
-
-
-    <!-- .....Seccion principal..... -->
+<!-- SECCION PRINCIPAL -->
 <main id="main_cursos">
-        <br>
-        <h2>videos educativos</h2>
-    
-        <!-- .....Videos de la pagina principal..... -->
-    
-        <iframe width="30%" src="https://www.youtube.com/embed/WbCajOsDNPI?si=cY0Q0TMKXkN02D5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Cursos Populares</h2>
 
-    <iframe width="30%" src="https://www.youtube.com/embed/kowrqhxMQ04?si=sQbkh6neLsAH5_er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- boostrap cards -->
+ <div id="cards_cursos_box">
 
-    <iframe width="30%" src="https://www.youtube.com/embed/7xv0gmn4Coc?si=hsv_r_IfymycxV9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- Card #1 -->
+<div class="card" style="width: 18rem; margin: 10px;">
+  <img src="imagenes sitio desafio/img_card1_cursos.png"  class="card-img-top" alt="imagen card1 cursos">
+  <div class="card-body">
+    <h5 class="card-title">EL MÉTODO 'SEGA'</h5>
+    <p class="card-text" id="texto_card1_cursos">¡Aprende a poner tildes de manera sencilla y eficiente con el método SEGA! 📚✨ En este...</p>
 
-    <iframe width="30%" src="https://www.youtube.com/embed/gcEiwX7JpNs?si=2weyPP3npNUgpfdL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <button type="button" class="btn btn-link" id="botonVerMas_card1_cursos">VER MAS</button>
 
-    <iframe width="30%" src="https://www.youtube.com/embed/rO4Vhucl1tQ?si=aPg-dQ1g8zrFSeTj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- <button type="button" class="btn btn-warning">Ir al curso</button> -->
 
-    <iframe width="30%" src="https://www.youtube.com/embed/Wm9WYbvVxaI?si=STu3XBmxKLCcMvvP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Button ventana modal CARD 1 -->
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#card1_cursos">Ir al Curso</button>
 
-</main> 
+  </div>
+</div>
+
+<!-- Card #2 -->
+<div class="card" style="width: 18rem; margin: 10px;">
+  <img src="imagenes sitio desafio/img_card2_cursos.png" class="card-img-top" alt="img card2 cursos">
+  <div class="card-body">
+    <h5 class="card-title">Cómo APRENDER más Rápido</h5>
+    <p class="card-text">¿Cómo puedes hacer para mejorar tu aprendizaje?</p>
+
+    <!-- Button ventana modal CARD 2 -->
+    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#card2_cursos">Ir al Curso</button>
+
+  </div>
+</div>
 
 
-<!-- .....Pie de pagina..... -->
+<!-- Card #3 -->
+
+<div class="card" style="width: 18rem; margin: 10px;">
+  <img src="imagenes sitio desafio/img_card3_cursos.png" class="card-img-top" alt="img card3 cursos">
+  <div class="card-body">
+    <h5 class="card-title">Cómo crear un mundo ficcional</h5>
+    <p class="card-text">La autora Kate Messner te enseñara como crear un mundo digno de exploración con tus propias ideas.</p>
+
+      <!-- Button ventana modal CARD 3 -->
+<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#card3_cursos">Ir al Curso</button>
+
+  </div>
+</div>
+
+<!-- ....FIN CARDS_BOX  -->
+</div>
+
+
+<!-- Listado de cursos -->
+<div class="contenedor-cursos">
+  <button id="btnMostrarCursos">Mostrar Cursos Disponibles</button>
+  <ul id="listaCursos"></ul>
+</div>
+
+<!-- ventana Modal card 1-->
+<div class="modal fade modal-xl" id="card1_cursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- VIDEO CARD1 -->
+        <iframe width="80%" height="90%" src="https://www.youtube.com/embed/WbCajOsDNPI?si=cY0Q0TMKXkN02D5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ventana Modal card 2-->
+<div class="modal fade modal-xl" id="card2_cursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- VIDEO CARD2 -->
+        <iframe width="80%" height="80%"  src="https://www.youtube.com/embed/kowrqhxMQ04?si=sQbkh6neLsAH5_er" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ventana Modal card 3-->
+<div class="modal fade modal-xl" id="card3_cursos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- VIDEO CARD3 -->
+    <iframe width="80%" height="80%" src="https://www.youtube.com/embed/WJBLkxx376U?si=_eFMFdA9wYiG2KZr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fin MAIN -->
+</main>
+
+<!-- PIE DE PAGINA -->
 <footer>
     <p>Sitio web oficial de librosyletras.com.ar </p>
 
-<!-- ....instagram buttom.... -->
-    <a href="https://www.instagram.com/elgrandsplendid/?hl=es" target="_blank"><img src="imagenes sitio desafio/instagram icon.png" alt="instagram buttom"></a>
+    <!-- INSTAGRAM BUTTON -->
+    <a href="https://www.instagram.com/elgrandsplendid/?hl=es" target="_blank"><img src="imagenes sitio desafio/instagram icon.png" alt="instagram button"></a>
 
-<!-- ....youtube buttom ejemplo.... -->
-    <a href="https://www.youtube.com/@curiosamente" target="_blank"><img src="imagenes sitio desafio/youtube icon.png" alt="youtube buttom"></a>
+    <!-- YOUTUBE BUTTON -->
+    <a href="https://www.youtube.com/@curiosamente" target="_blank"><img src="imagenes sitio desafio/youtube icon.png" alt="youtube button"></a>
 
-<!-- ....youtube buttom ejemplo.... -->
-    <a href="https://www.tiktok.com/@curiosamente_oficial" target="_blank"><img src="imagenes sitio desafio/tiktok icon.png" alt="tiktok buttom"></a>
-
+    <!-- TIKTOK BUTTON -->
+    <a href="https://www.tiktok.com/@curiosamente_oficial" target="_blank"><img src="imagenes sitio desafio/tiktok icon.png" alt="tiktok button"></a>
 </footer>
 
+<script src="scriptCursos.js" defer></script>
 
 <!-- codigo Js framework-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
 
+<!--Fin del codigo-->
 
 </body>
 </html>
