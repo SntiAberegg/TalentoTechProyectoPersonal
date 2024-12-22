@@ -11,12 +11,17 @@ Libros y Letras.com es una plataforma educativa para explorar la belleza de la L
 * **Comunidad de lectores:** Conéctate con otros apasionados de la literatura.
 
 **Tecnologías:** HTML, CSS
+**Codigo:** JavaScript
 
-drive:
+Drive:
 **https://drive.google.com/drive/u/5/folders/1jomy0twqcHa28P79fPyM0CQ3BSJ1eCfM**
 
-repo github:
+Repo github:
 **https://github.com/SntiAberegg/TalentoTechProyectoPersonal**
 
-sitio github pages:
+Sitio github pages:
 **https://sntiaberegg.github.io/TalentoTechProyectoPersonal/**
+
+
+API REST: **https://www.meteosource.com/**
+FRAMEWORK: **https://getbootstrap.com/docs/5.2/getting-started/introduction/**
